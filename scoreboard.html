@@ -12,12 +12,41 @@
 <body>
 
     <div class="container">
-        <div>
-            <h3>HOME</h3>
+
+        <div class="scoreboard">
+
+            <div class="team-column">
+                <h3 class="text">HOME</h3>
+
+                <div class="points-box">
+                    <p class="score" id="home-score">0</p>
+                </div>
+
+                <div class="buttons-box">
+                    <button onclick="homeAddPoints(1)" id="onePoint">+ 1</button>
+                    <button onclick="homeAddPoints(2)" id="twoPoint">+ 2</button>
+                    <button onclick="homeAddPoints(3)" id="threePoint">+ 3</button>
+                </div>
+
+            </div>
+
+            <div class="team-column">
+                <h3 class="text">GUEST</h3>
+
+                <div class="points-box">
+                    <p class="score" id="guest-score">0</p>
+                </div>
+
+                <div class="buttons-box">
+                    <button onclick="guestAddPoints(1)" id="onePoint">+ 1</button>
+                    <button onclick="guestAddPoints(2)" id="twoPoint">+ 2</button>
+                    <button onclick="guestAddPoints(3)" id="threePoint">+ 3</button>
+                </div>
+
+            </div>
+
         </div>
-        <div>
-            <h3>GUEST</h3>
-        </div>
+
     </div>
 
     <script src="scoreboard.js"></script>

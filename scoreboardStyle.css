@@ -1,8 +1,76 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(32, 27, 74);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+  color: white;
+}
+
+h3 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .container {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 800px;
+  height: 600px;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 7px solid white;
+  /* outline: 10px solid rgba(27, 36, 74, 1); */
+}
+
+.team-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.points-box {
+  position: relative;
+  width: 18em;
+  height: 10em;
+
+  margin-bottom: 30px;
+  background-color: #0c0c0c;
+}
+
+.score {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 10em;
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  margin-right: 37.2px;
+  color: rgba(249, 79, 109, 1);
 }
