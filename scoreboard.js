@@ -13,3 +13,10 @@ function guestAddPoints(n) {
   guestPoints += n;
   guestScore.textContent = guestPoints;
 }
+
+function newGame() {
+  homePoints = 0;
+  guestPoints = 0;
+  homeScore.textContent = homePoints;
+  guestScore.textContent = guestPoints;
+}
