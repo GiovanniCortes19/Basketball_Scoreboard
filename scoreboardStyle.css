@@ -53,9 +53,20 @@ h3 {
   position: relative;
   width: 18em;
   height: 10em;
+  /* border: 3px solid white; */
 
   margin-bottom: 30px;
   background-color: black;
+}
+
+div#home-box {
+  border: 3px solid;
+  border-color: black;
+}
+
+div#guest-box {
+  border: 3px solid;
+  border-color: black;
 }
 
 .score {
