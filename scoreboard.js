@@ -12,12 +12,14 @@ function homeAddPoints(n) {
   homePoints += n;
   homeScore.textContent = homePoints;
   isWinning();
+  sound(n);
 }
 
 function guestAddPoints(n) {
   guestPoints += n;
   guestScore.textContent = guestPoints;
   isWinning();
+  sound(n);
 }
 
 function newGame() {
@@ -39,5 +41,12 @@ function isWinning() {
   } else {
     guestBox.style.borderColor = "black";
     homeBox.style.borderColor = "black";
+  }
+}
+
+function sound(n) {
+  let snd = new Audio("Bang.m4a");
+  if (n === 3) {
+    snd.play();
   }
 }
