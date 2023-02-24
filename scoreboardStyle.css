@@ -6,7 +6,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: rgb(34, 29, 80);
+  background-color: rgb(5, 4, 12);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -25,6 +25,7 @@ h3 {
   top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
 
   display: flex;
   flex-direction: column;
@@ -36,6 +37,8 @@ h3 {
 }
 
 .scoreboard {
+  background-color: rgb(1, 78, 1);
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -115,14 +118,22 @@ button {
 }
 
 button:hover {
-  background-color: rgb(24, 21, 58);
+  background-color: rgb(1, 62, 1);
+}
+
+.game-options {
+  background-color: rgb(5, 4, 12);
 }
 
 button#new-game-button {
+  background-color: rgb(1, 78, 1);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2em;
   cursor: pointer;
   margin-top: 1em;
   width: 200px;
   height: 70px;
+}
+button#new-game-button:hover {
+  background-color: rgb(1, 62, 1);
 }
