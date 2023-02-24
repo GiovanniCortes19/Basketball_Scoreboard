@@ -46,7 +46,10 @@ function isWinning() {
 
 function sound(n) {
   let snd = new Audio("Bang.m4a");
+  let twoPointer = new Audio("ka-ching.mp3");
   if (n === 3) {
     snd.play();
+  } else {
+    twoPointer.play();
   }
 }
